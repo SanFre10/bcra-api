@@ -13,7 +13,7 @@ export default function ValueCard({ idVariable, descripcion, fecha, valor }: Val
 		<Link href={`/${idVariable}`}>
 			<Card className="max-w-60 cursor-pointer hover:scale-105" decoration="top" decorationColor="indigo">
 				{descripcion && <p className="text-tremor-default text-tremor-content">{descripcion}</p>}
-				<p className="text-3xl text-tremor-content-stron font-semibold">{valor}3</p>
+				<p className="text-3xl text-tremor-content-stron font-semibold">{valor.toLocaleString('en')}</p>
 			</Card>
 		</Link>
 	);
